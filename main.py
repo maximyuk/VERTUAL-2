@@ -40,16 +40,9 @@ try:
     charset='utf8mb4',
     cursorclass=pymysql.cursors.DictCursor)  #подключення до бд
   cursor = connect.cursor()
-  try:
-    cursor.execute(
-      "CREATE DATABASE IF NOT EXISTS zhekazz4_vertual")  #тіп створює бд
-  finally:
-    connect.commit()
-except Exception as ex:
-  print(ex)
- 
- 
 
+ 
+ 
 
 #---------------------------------------------------цей евентс означає коли бот добавляється на сервер-------------------------------------------------------------------------------------------
 @bot.event
